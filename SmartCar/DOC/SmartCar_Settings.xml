@@ -1,0 +1,2876 @@
+<PE_PROJECT_SETTINGS_DOCUMENTATION>
+  <PE_product_version v="version 3.00 for Freescale HCS12(X) family"/>
+  <PE_core_version v="Processor Expert Version 0412"/>
+
+  <CPU_Bean name="Cpu" type="MC9S12XS256_112">
+    <Enabled v="N"/>
+
+    <Properties>
+      <Bean_name v="Cpu"/>
+      <CPU_type v="MC9S12XS256CAL"/>
+      <list name="Shared clock settings - XDP512" v="1">
+        <group name="Clock settings">
+          <group name="Input clock">
+            <Clock_type v="External clock source"/>
+            <Clock_frequency__MHz_ v="16"/>
+            <group name="Clock input pin">
+              <Pin v="EXTAL"/>
+              <Pin_signal v=""/>
+            </group>
+            <group name="Clock output pin">
+              <Pin v="XTAL"/>
+              <Pin_signal v=""/>
+            </group>
+          </group>
+          <group name="Output clock">
+            <boolgroup name="External clock" v="Enabled">
+              <ECLK_pin v="PE4_ECLK"/>
+              <ECLK_pin_signal v=""/>
+            </boolgroup>
+          </group>
+          <group name="Low-power modes settings">
+            <Pseudo_stop v="no"/>
+            <PLL_stops_in_wait_mode v="no"/>
+          </group>
+          <Clock_monitor v="Enter Self clock mode"/>
+        </group>
+      </list>
+      <list name="Shared interrupts settings - XDP512" v="1">
+        <group name="Interrupts initialization">
+          <Initialization_priority v="minimal priority"/>
+        </group>
+      </list>
+      <list name="Shared internal resource mapping - XDP512" v="1">
+        <group name="Internal resource mapping">
+          <Direct_page_mapping v="0"/>
+          <group name="Interrupt/Reset vector table">
+            <group name="Reset vector table">
+              <Address v="65530"/>
+              <Size v="6"/>
+            </group>
+            <group name="Interrupt vector table">
+              <Address v="65296"/>
+              <Size v="234"/>
+              <Init_IVBR_register v="yes"/>
+            </group>
+          </group>
+        </group>
+      </list>
+      <list name="Shared external bus and user mode - XDP512" v="1">
+        <group name="External bus and user mode">
+          <Boot_operating_mode v="Special single-chip"/>
+          <boolgroup name="Operating mode switching" v="no" />
+          <enumgroup name="Operating mode settings" v="Special single-chip">
+          </enumgroup>
+        </group>
+      </list>
+      <group name="Internal peripherals">
+        <list name="Shared BDM Module Settings" v="1">
+          <group name="BDM Debug support">
+            <Stop_COP_and_RTI_in_Active_BDM_mode v="no"/>
+          </group>
+        </list>
+        <list name="Internal Peripherals IO" v="1">
+          <group name="I/O module">
+            <list name="Shared Unused I/O" v="1">
+              <enumgroup name="Initialize unused I/O pins" v="no initialization">
+              </enumgroup>
+            </list>
+            <group name="PORT A">
+              <Reduced_drive_for_all_port_A v="no"/>
+            </group>
+            <group name="PORT AD0H">
+              <Reduced_drive_for_PAD08 v="no"/>
+              <Reduced_drive_for_PAD09 v="no"/>
+              <Reduced_drive_for_PAD10 v="no"/>
+              <Reduced_drive_for_PAD11 v="no"/>
+              <Reduced_drive_for_PAD12 v="no"/>
+              <Reduced_drive_for_PAD13 v="no"/>
+              <Reduced_drive_for_PAD14 v="no"/>
+              <Reduced_drive_for_PAD15 v="no"/>
+            </group>
+            <group name="PORT AD0L">
+              <Reduced_drive_for_PAD00 v="no"/>
+              <Reduced_drive_for_PAD01 v="no"/>
+              <Reduced_drive_for_PAD02 v="no"/>
+              <Reduced_drive_for_PAD03 v="no"/>
+              <Reduced_drive_for_PAD04 v="no"/>
+              <Reduced_drive_for_PAD05 v="no"/>
+              <Reduced_drive_for_PAD06 v="no"/>
+              <Reduced_drive_for_PAD07 v="no"/>
+            </group>
+            <group name="PORT B">
+              <Reduced_drive_for_all_port_B v="no"/>
+            </group>
+            <group name="PORT E">
+              <Reduced_drive_for_all_port_E v="no"/>
+            </group>
+            <group name="PORT H">
+              <Reduced_drive_for_PH0 v="no"/>
+              <Reduced_drive_for_PH1 v="no"/>
+              <Reduced_drive_for_PH2 v="no"/>
+              <Reduced_drive_for_PH3 v="no"/>
+              <Reduced_drive_for_PH4 v="no"/>
+              <Reduced_drive_for_PH5 v="no"/>
+              <Reduced_drive_for_PH6 v="no"/>
+              <Reduced_drive_for_PH7 v="no"/>
+            </group>
+            <group name="PORT J">
+              <Reduced_drive_for_PJ0 v="no"/>
+              <Reduced_drive_for_PJ1 v="no"/>
+              <Reduced_drive_for_PJ6 v="no"/>
+              <Reduced_drive_for_PJ7 v="no"/>
+            </group>
+            <group name="PORT K">
+              <Reduced_drive_for_all_port_K v="no"/>
+            </group>
+            <group name="PORT M">
+              <Reduced_drive_for_PM0 v="no"/>
+              <Reduced_drive_for_PM1 v="no"/>
+              <Reduced_drive_for_PM2 v="no"/>
+              <Reduced_drive_for_PM3 v="no"/>
+              <Reduced_drive_for_PM4 v="no"/>
+              <Reduced_drive_for_PM5 v="no"/>
+              <Reduced_drive_for_PM6 v="no"/>
+              <Reduced_drive_for_PM7 v="no"/>
+            </group>
+            <group name="PORT P">
+              <Reduced_drive_for_PP0 v="no"/>
+              <Reduced_drive_for_PP1 v="no"/>
+              <Reduced_drive_for_PP2 v="no"/>
+              <Reduced_drive_for_PP3 v="no"/>
+              <Reduced_drive_for_PP4 v="no"/>
+              <Reduced_drive_for_PP5 v="no"/>
+              <Reduced_drive_for_PP6 v="no"/>
+              <Reduced_drive_for_PP7 v="no"/>
+            </group>
+            <group name="PORT S">
+              <Reduced_drive_for_PS0 v="no"/>
+              <Reduced_drive_for_PS1 v="no"/>
+              <Reduced_drive_for_PS2 v="no"/>
+              <Reduced_drive_for_PS3 v="no"/>
+              <Reduced_drive_for_PS4 v="no"/>
+              <Reduced_drive_for_PS5 v="no"/>
+              <Reduced_drive_for_PS6 v="no"/>
+              <Reduced_drive_for_PS7 v="no"/>
+            </group>
+            <group name="PORT T">
+              <Reduced_drive_for_PT0 v="no"/>
+              <Reduced_drive_for_PT1 v="no"/>
+              <Reduced_drive_for_PT2 v="no"/>
+              <Reduced_drive_for_PT3 v="no"/>
+              <Reduced_drive_for_PT4 v="no"/>
+              <Reduced_drive_for_PT5 v="no"/>
+              <Reduced_drive_for_PT6 v="no"/>
+              <Reduced_drive_for_PT7 v="no"/>
+            </group>
+          </group>
+        </list>
+        <list name="Shared PIT Module Settings" v="1">
+        </list>
+        <list name="Shared PWM Module Settings" v="1">
+        </list>
+        <list name="Shared TIM module settings" v="1">
+        </list>
+        <list name="Shared VREG module settings" v="1">
+          <group name="Voltage Regulator">
+            <Voltage_Access v="Temperature sense"/>
+          </group>
+        </list>
+      </group>
+      <list name="Shared CPU interrupts - XDP512" v="1">
+        <group name="CPU interrupts/resets">
+        </group>
+      </list>
+      <list name="Shared speed modes settings" v="1">
+        <group name="Enabled speed modes">
+          <boolgroup name="High speed mode" v="Enabled">
+            <Internal_bus_clock v="8"/>
+            <boolgroup name="PLL clock" v="Disabled" />
+          </boolgroup>
+          <boolgroup name="Low speed mode" v="Disabled" />
+          <boolgroup name="Slow speed mode" v="Disabled" />
+        </group>
+      </list>
+    </Properties>
+
+    <Methods>
+      <list name="SharedCpuMethods" v="1">
+        <SetHighSpeed v="don&apos;t generate code"/>
+        <SetLowSpeed v="don&apos;t generate code"/>
+        <SetSlowSpeed v="don&apos;t generate code"/>
+        <GetSpeedMode v="don&apos;t generate code"/>
+        <EnableInt v="generate code"/>
+        <DisableInt v="generate code"/>
+        <SetWaitMode v="generate code"/>
+        <SetStopMode v="generate code"/>
+        <Delay100US v="don&apos;t generate code"/>
+        <GetPllLockStatusFlag v="don&apos;t generate code"/>
+        <GetResetSource v="don&apos;t generate code"/>
+      </list>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <list name="SharedCpuEvents" v="1">
+        <event name="OnReset" v="don&apos;t generate code" />
+      </list>
+    </Events>
+    <Compiler v="CodeWarrior HC12X C Compiler"/>
+
+    <CompilerProperties>
+      <Compiler v="CodeWarrior HCS12X C Compiler"/>
+      <enumgroup name="Unhandled interrupts" v="One handler for all">
+        <Interrupt_priority v="Don&apos;t initialize"/>
+        <Unhandled_int_code>
+asm(BGND);
+        </Unhandled_int_code>
+      </enumgroup>
+      <Generate_macros v="yes"/>
+      <group name="User initialization">
+        <User_data_declarations>
+        </User_data_declarations>
+        <User_code_before_PE_initialization>
+        </User_code_before_PE_initialization>
+        <User_code_after_PE_initialization>
+        </User_code_after_PE_initialization>
+      </group>
+      <Memory_model v="Banked"/>
+      <boolgroup name="Generate PRM file" v="yes">
+        <enumgroup name="Stack specification" v="size">
+          <Stack_size v="128"/>
+        </enumgroup>
+        <group name="Memory segments">
+          <Set_default_memory_segments v="Click to set default &gt;"/>
+          <list name="ROM/RAM segments" v="17">
+            <boolgroup name="Segment0" v="Enabled">
+              <Name v="RAM"/>
+              <Qualifier v="READ_WRITE"/>
+              <Address v="8192"/>
+              <Size v="8192"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment1" v="Disabled" />
+            <boolgroup name="Segment2" v="Enabled">
+              <Name v="ROM_C000"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="49152"/>
+              <Size v="16128"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment3" v="Enabled">
+              <Name v="PAGE_F0"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8126464"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment4" v="Enabled">
+              <Name v="PAGE_F1"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8142848"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment5" v="Enabled">
+              <Name v="PAGE_F2"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8159232"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment6" v="Enabled">
+              <Name v="PAGE_F3"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8175616"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment7" v="Enabled">
+              <Name v="PAGE_F4"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8192000"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment8" v="Enabled">
+              <Name v="PAGE_F5"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8208384"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment9" v="Enabled">
+              <Name v="PAGE_F6"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8224768"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment10" v="Enabled">
+              <Name v="PAGE_F7"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8241152"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment11" v="Enabled">
+              <Name v="PAGE_F8"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8257536"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment12" v="Enabled">
+              <Name v="PAGE_F9"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8273920"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment13" v="Enabled">
+              <Name v="PAGE_FA"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8290304"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment14" v="Enabled">
+              <Name v="PAGE_FB"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8306688"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment15" v="Enabled">
+              <Name v="PAGE_FC"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8323072"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment16" v="Enabled">
+              <Name v="PAGE_FE"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8355840"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+          </list>
+        </group>
+        <list name="C_ImportUserPlacement" v="1">
+          <boolgroup name="Customize placement" v="Disabled" />
+        </list>
+      </boolgroup>
+    </CompilerProperties>
+  </CPU_Bean>
+
+  <CPU_Bean name="Cpu" type="MC9S12XS256_112">
+    <Enabled v="N"/>
+
+    <Properties>
+      <Bean_name v="Cpu"/>
+      <CPU_type v="MC9S12XS256MAL"/>
+      <list name="Shared clock settings - XDP512" v="1">
+        <group name="Clock settings">
+          <group name="Input clock">
+            <Clock_type v="External clock source"/>
+            <Clock_frequency__MHz_ v="16"/>
+            <group name="Clock input pin">
+              <Pin v="EXTAL"/>
+              <Pin_signal v=""/>
+            </group>
+            <group name="Clock output pin">
+              <Pin v="XTAL"/>
+              <Pin_signal v=""/>
+            </group>
+          </group>
+          <group name="Output clock">
+            <boolgroup name="External clock" v="Enabled">
+              <ECLK_pin v="PE4_ECLK"/>
+              <ECLK_pin_signal v=""/>
+            </boolgroup>
+          </group>
+          <group name="Low-power modes settings">
+            <Pseudo_stop v="no"/>
+            <PLL_stops_in_wait_mode v="no"/>
+          </group>
+          <Clock_monitor v="Enter Self clock mode"/>
+        </group>
+      </list>
+      <list name="Shared interrupts settings - XDP512" v="1">
+        <group name="Interrupts initialization">
+          <Initialization_priority v="minimal priority"/>
+        </group>
+      </list>
+      <list name="Shared internal resource mapping - XDP512" v="1">
+        <group name="Internal resource mapping">
+          <Direct_page_mapping v="0"/>
+          <group name="Interrupt/Reset vector table">
+            <group name="Reset vector table">
+              <Address v="65530"/>
+              <Size v="6"/>
+            </group>
+            <group name="Interrupt vector table">
+              <Address v="65296"/>
+              <Size v="234"/>
+              <Init_IVBR_register v="yes"/>
+            </group>
+          </group>
+        </group>
+      </list>
+      <list name="Shared external bus and user mode - XDP512" v="1">
+        <group name="External bus and user mode">
+          <Boot_operating_mode v="Special single-chip"/>
+          <boolgroup name="Operating mode switching" v="no" />
+          <enumgroup name="Operating mode settings" v="Special single-chip">
+          </enumgroup>
+        </group>
+      </list>
+      <group name="Internal peripherals">
+        <list name="Shared BDM Module Settings" v="1">
+          <group name="BDM Debug support">
+            <Stop_COP_and_RTI_in_Active_BDM_mode v="no"/>
+          </group>
+        </list>
+        <list name="Internal Peripherals IO" v="1">
+          <group name="I/O module">
+            <list name="Shared Unused I/O" v="1">
+              <enumgroup name="Initialize unused I/O pins" v="no initialization">
+              </enumgroup>
+            </list>
+            <group name="PORT A">
+              <Reduced_drive_for_all_port_A v="no"/>
+            </group>
+            <group name="PORT AD0H">
+              <Reduced_drive_for_PAD08 v="no"/>
+              <Reduced_drive_for_PAD09 v="no"/>
+              <Reduced_drive_for_PAD10 v="no"/>
+              <Reduced_drive_for_PAD11 v="no"/>
+              <Reduced_drive_for_PAD12 v="no"/>
+              <Reduced_drive_for_PAD13 v="no"/>
+              <Reduced_drive_for_PAD14 v="no"/>
+              <Reduced_drive_for_PAD15 v="no"/>
+            </group>
+            <group name="PORT AD0L">
+              <Reduced_drive_for_PAD00 v="no"/>
+              <Reduced_drive_for_PAD01 v="no"/>
+              <Reduced_drive_for_PAD02 v="no"/>
+              <Reduced_drive_for_PAD03 v="no"/>
+              <Reduced_drive_for_PAD04 v="no"/>
+              <Reduced_drive_for_PAD05 v="no"/>
+              <Reduced_drive_for_PAD06 v="no"/>
+              <Reduced_drive_for_PAD07 v="no"/>
+            </group>
+            <group name="PORT B">
+              <Reduced_drive_for_all_port_B v="no"/>
+            </group>
+            <group name="PORT E">
+              <Reduced_drive_for_all_port_E v="no"/>
+            </group>
+            <group name="PORT H">
+              <Reduced_drive_for_PH0 v="no"/>
+              <Reduced_drive_for_PH1 v="no"/>
+              <Reduced_drive_for_PH2 v="no"/>
+              <Reduced_drive_for_PH3 v="no"/>
+              <Reduced_drive_for_PH4 v="no"/>
+              <Reduced_drive_for_PH5 v="no"/>
+              <Reduced_drive_for_PH6 v="no"/>
+              <Reduced_drive_for_PH7 v="no"/>
+            </group>
+            <group name="PORT J">
+              <Reduced_drive_for_PJ0 v="no"/>
+              <Reduced_drive_for_PJ1 v="no"/>
+              <Reduced_drive_for_PJ6 v="no"/>
+              <Reduced_drive_for_PJ7 v="no"/>
+            </group>
+            <group name="PORT K">
+              <Reduced_drive_for_all_port_K v="no"/>
+            </group>
+            <group name="PORT M">
+              <Reduced_drive_for_PM0 v="no"/>
+              <Reduced_drive_for_PM1 v="no"/>
+              <Reduced_drive_for_PM2 v="no"/>
+              <Reduced_drive_for_PM3 v="no"/>
+              <Reduced_drive_for_PM4 v="no"/>
+              <Reduced_drive_for_PM5 v="no"/>
+              <Reduced_drive_for_PM6 v="no"/>
+              <Reduced_drive_for_PM7 v="no"/>
+            </group>
+            <group name="PORT P">
+              <Reduced_drive_for_PP0 v="no"/>
+              <Reduced_drive_for_PP1 v="no"/>
+              <Reduced_drive_for_PP2 v="no"/>
+              <Reduced_drive_for_PP3 v="no"/>
+              <Reduced_drive_for_PP4 v="no"/>
+              <Reduced_drive_for_PP5 v="no"/>
+              <Reduced_drive_for_PP6 v="no"/>
+              <Reduced_drive_for_PP7 v="no"/>
+            </group>
+            <group name="PORT S">
+              <Reduced_drive_for_PS0 v="no"/>
+              <Reduced_drive_for_PS1 v="no"/>
+              <Reduced_drive_for_PS2 v="no"/>
+              <Reduced_drive_for_PS3 v="no"/>
+              <Reduced_drive_for_PS4 v="no"/>
+              <Reduced_drive_for_PS5 v="no"/>
+              <Reduced_drive_for_PS6 v="no"/>
+              <Reduced_drive_for_PS7 v="no"/>
+            </group>
+            <group name="PORT T">
+              <Reduced_drive_for_PT0 v="no"/>
+              <Reduced_drive_for_PT1 v="no"/>
+              <Reduced_drive_for_PT2 v="no"/>
+              <Reduced_drive_for_PT3 v="no"/>
+              <Reduced_drive_for_PT4 v="no"/>
+              <Reduced_drive_for_PT5 v="no"/>
+              <Reduced_drive_for_PT6 v="no"/>
+              <Reduced_drive_for_PT7 v="no"/>
+            </group>
+          </group>
+        </list>
+        <list name="Shared PIT Module Settings" v="1">
+        </list>
+        <list name="Shared PWM Module Settings" v="1">
+        </list>
+        <list name="Shared TIM module settings" v="1">
+        </list>
+        <list name="Shared VREG module settings" v="1">
+          <group name="Voltage Regulator">
+            <Voltage_Access v="Temperature sense"/>
+          </group>
+        </list>
+      </group>
+      <list name="Shared CPU interrupts - XDP512" v="1">
+        <group name="CPU interrupts/resets">
+        </group>
+      </list>
+      <list name="Shared speed modes settings" v="1">
+        <group name="Enabled speed modes">
+          <boolgroup name="High speed mode" v="Enabled">
+            <Internal_bus_clock v="40"/>
+            <boolgroup name="PLL clock" v="Enabled">
+              <Reference_divider v="Auto select"/>
+              <PLL_multiplication_factor v="Auto select"/>
+              <PLL_post_divider v="Auto select"/>
+              <VCO_clock_frequency__MHz_ v="80"/>
+              <Frequency_Modulation v="FM off"/>
+            </boolgroup>
+          </boolgroup>
+          <boolgroup name="Low speed mode" v="Disabled" />
+          <boolgroup name="Slow speed mode" v="Disabled" />
+        </group>
+      </list>
+    </Properties>
+
+    <Methods>
+      <list name="SharedCpuMethods" v="1">
+        <SetHighSpeed v="don&apos;t generate code"/>
+        <SetLowSpeed v="don&apos;t generate code"/>
+        <SetSlowSpeed v="don&apos;t generate code"/>
+        <GetSpeedMode v="don&apos;t generate code"/>
+        <EnableInt v="generate code"/>
+        <DisableInt v="generate code"/>
+        <SetWaitMode v="generate code"/>
+        <SetStopMode v="generate code"/>
+        <Delay100US v="don&apos;t generate code"/>
+        <GetPllLockStatusFlag v="don&apos;t generate code"/>
+        <GetResetSource v="don&apos;t generate code"/>
+      </list>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <list name="SharedCpuEvents" v="1">
+        <event name="OnReset" v="don&apos;t generate code" />
+      </list>
+    </Events>
+    <Compiler v="CodeWarrior HC12X C Compiler"/>
+
+    <CompilerProperties>
+      <Compiler v="CodeWarrior HCS12X C Compiler"/>
+      <enumgroup name="Unhandled interrupts" v="One handler for all">
+        <Interrupt_priority v="Don&apos;t initialize"/>
+        <Unhandled_int_code>
+asm(BGND);
+        </Unhandled_int_code>
+      </enumgroup>
+      <Generate_macros v="yes"/>
+      <group name="User initialization">
+        <User_data_declarations>
+        </User_data_declarations>
+        <User_code_before_PE_initialization>
+        </User_code_before_PE_initialization>
+        <User_code_after_PE_initialization>
+        </User_code_after_PE_initialization>
+      </group>
+      <Memory_model v="Banked"/>
+      <boolgroup name="Generate PRM file" v="yes">
+        <enumgroup name="Stack specification" v="size">
+          <Stack_size v="128"/>
+        </enumgroup>
+        <group name="Memory segments">
+          <Set_default_memory_segments v="Click to set default &gt;"/>
+          <list name="ROM/RAM segments" v="17">
+            <boolgroup name="Segment0" v="Enabled">
+              <Name v="RAM"/>
+              <Qualifier v="READ_WRITE"/>
+              <Address v="8192"/>
+              <Size v="8192"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment1" v="Disabled" />
+            <boolgroup name="Segment2" v="Enabled">
+              <Name v="ROM_C000"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="49152"/>
+              <Size v="16128"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment3" v="Enabled">
+              <Name v="PAGE_F0"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8126464"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment4" v="Enabled">
+              <Name v="PAGE_F1"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8142848"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment5" v="Enabled">
+              <Name v="PAGE_F2"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8159232"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment6" v="Enabled">
+              <Name v="PAGE_F3"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8175616"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment7" v="Enabled">
+              <Name v="PAGE_F4"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8192000"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment8" v="Enabled">
+              <Name v="PAGE_F5"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8208384"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment9" v="Enabled">
+              <Name v="PAGE_F6"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8224768"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment10" v="Enabled">
+              <Name v="PAGE_F7"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8241152"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment11" v="Enabled">
+              <Name v="PAGE_F8"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8257536"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment12" v="Enabled">
+              <Name v="PAGE_F9"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8273920"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment13" v="Enabled">
+              <Name v="PAGE_FA"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8290304"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment14" v="Enabled">
+              <Name v="PAGE_FB"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8306688"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment15" v="Enabled">
+              <Name v="PAGE_FC"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8323072"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment16" v="Enabled">
+              <Name v="PAGE_FE"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8355840"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+          </list>
+        </group>
+        <list name="C_ImportUserPlacement" v="1">
+          <boolgroup name="Customize placement" v="Disabled" />
+        </list>
+      </boolgroup>
+    </CompilerProperties>
+  </CPU_Bean>
+
+  <CPU_Bean name="Cpu" type="MC9S12XS256_112">
+    <Enabled v="N"/>
+
+    <Properties>
+      <Bean_name v="Cpu"/>
+      <CPU_type v="MC9S12XS256VAL"/>
+      <list name="Shared clock settings - XDP512" v="1">
+        <group name="Clock settings">
+          <group name="Input clock">
+            <Clock_type v="External clock source"/>
+            <Clock_frequency__MHz_ v="16"/>
+            <group name="Clock input pin">
+              <Pin v="EXTAL"/>
+              <Pin_signal v=""/>
+            </group>
+            <group name="Clock output pin">
+              <Pin v="XTAL"/>
+              <Pin_signal v=""/>
+            </group>
+          </group>
+          <group name="Output clock">
+            <boolgroup name="External clock" v="Enabled">
+              <ECLK_pin v="PE4_ECLK"/>
+              <ECLK_pin_signal v=""/>
+            </boolgroup>
+          </group>
+          <group name="Low-power modes settings">
+            <Pseudo_stop v="no"/>
+            <PLL_stops_in_wait_mode v="no"/>
+          </group>
+          <Clock_monitor v="Enter Self clock mode"/>
+        </group>
+      </list>
+      <list name="Shared interrupts settings - XDP512" v="1">
+        <group name="Interrupts initialization">
+          <Initialization_priority v="minimal priority"/>
+        </group>
+      </list>
+      <list name="Shared internal resource mapping - XDP512" v="1">
+        <group name="Internal resource mapping">
+          <Direct_page_mapping v="0"/>
+          <group name="Interrupt/Reset vector table">
+            <group name="Reset vector table">
+              <Address v="65530"/>
+              <Size v="6"/>
+            </group>
+            <group name="Interrupt vector table">
+              <Address v="65296"/>
+              <Size v="234"/>
+              <Init_IVBR_register v="yes"/>
+            </group>
+          </group>
+        </group>
+      </list>
+      <list name="Shared external bus and user mode - XDP512" v="1">
+        <group name="External bus and user mode">
+          <Boot_operating_mode v="Special single-chip"/>
+          <boolgroup name="Operating mode switching" v="no" />
+          <enumgroup name="Operating mode settings" v="Special single-chip">
+          </enumgroup>
+        </group>
+      </list>
+      <group name="Internal peripherals">
+        <list name="Shared BDM Module Settings" v="1">
+          <group name="BDM Debug support">
+            <Stop_COP_and_RTI_in_Active_BDM_mode v="no"/>
+          </group>
+        </list>
+        <list name="Internal Peripherals IO" v="1">
+          <group name="I/O module">
+            <list name="Shared Unused I/O" v="1">
+              <enumgroup name="Initialize unused I/O pins" v="no initialization">
+              </enumgroup>
+            </list>
+            <group name="PORT A">
+              <Reduced_drive_for_all_port_A v="no"/>
+            </group>
+            <group name="PORT AD0H">
+              <Reduced_drive_for_PAD08 v="no"/>
+              <Reduced_drive_for_PAD09 v="no"/>
+              <Reduced_drive_for_PAD10 v="no"/>
+              <Reduced_drive_for_PAD11 v="no"/>
+              <Reduced_drive_for_PAD12 v="no"/>
+              <Reduced_drive_for_PAD13 v="no"/>
+              <Reduced_drive_for_PAD14 v="no"/>
+              <Reduced_drive_for_PAD15 v="no"/>
+            </group>
+            <group name="PORT AD0L">
+              <Reduced_drive_for_PAD00 v="no"/>
+              <Reduced_drive_for_PAD01 v="no"/>
+              <Reduced_drive_for_PAD02 v="no"/>
+              <Reduced_drive_for_PAD03 v="no"/>
+              <Reduced_drive_for_PAD04 v="no"/>
+              <Reduced_drive_for_PAD05 v="no"/>
+              <Reduced_drive_for_PAD06 v="no"/>
+              <Reduced_drive_for_PAD07 v="no"/>
+            </group>
+            <group name="PORT B">
+              <Reduced_drive_for_all_port_B v="no"/>
+            </group>
+            <group name="PORT E">
+              <Reduced_drive_for_all_port_E v="no"/>
+            </group>
+            <group name="PORT H">
+              <Reduced_drive_for_PH0 v="no"/>
+              <Reduced_drive_for_PH1 v="no"/>
+              <Reduced_drive_for_PH2 v="no"/>
+              <Reduced_drive_for_PH3 v="no"/>
+              <Reduced_drive_for_PH4 v="no"/>
+              <Reduced_drive_for_PH5 v="no"/>
+              <Reduced_drive_for_PH6 v="no"/>
+              <Reduced_drive_for_PH7 v="no"/>
+            </group>
+            <group name="PORT J">
+              <Reduced_drive_for_PJ0 v="no"/>
+              <Reduced_drive_for_PJ1 v="no"/>
+              <Reduced_drive_for_PJ6 v="no"/>
+              <Reduced_drive_for_PJ7 v="no"/>
+            </group>
+            <group name="PORT K">
+              <Reduced_drive_for_all_port_K v="no"/>
+            </group>
+            <group name="PORT M">
+              <Reduced_drive_for_PM0 v="no"/>
+              <Reduced_drive_for_PM1 v="no"/>
+              <Reduced_drive_for_PM2 v="no"/>
+              <Reduced_drive_for_PM3 v="no"/>
+              <Reduced_drive_for_PM4 v="no"/>
+              <Reduced_drive_for_PM5 v="no"/>
+              <Reduced_drive_for_PM6 v="no"/>
+              <Reduced_drive_for_PM7 v="no"/>
+            </group>
+            <group name="PORT P">
+              <Reduced_drive_for_PP0 v="no"/>
+              <Reduced_drive_for_PP1 v="no"/>
+              <Reduced_drive_for_PP2 v="no"/>
+              <Reduced_drive_for_PP3 v="no"/>
+              <Reduced_drive_for_PP4 v="no"/>
+              <Reduced_drive_for_PP5 v="no"/>
+              <Reduced_drive_for_PP6 v="no"/>
+              <Reduced_drive_for_PP7 v="no"/>
+            </group>
+            <group name="PORT S">
+              <Reduced_drive_for_PS0 v="no"/>
+              <Reduced_drive_for_PS1 v="no"/>
+              <Reduced_drive_for_PS2 v="no"/>
+              <Reduced_drive_for_PS3 v="no"/>
+              <Reduced_drive_for_PS4 v="no"/>
+              <Reduced_drive_for_PS5 v="no"/>
+              <Reduced_drive_for_PS6 v="no"/>
+              <Reduced_drive_for_PS7 v="no"/>
+            </group>
+            <group name="PORT T">
+              <Reduced_drive_for_PT0 v="no"/>
+              <Reduced_drive_for_PT1 v="no"/>
+              <Reduced_drive_for_PT2 v="no"/>
+              <Reduced_drive_for_PT3 v="no"/>
+              <Reduced_drive_for_PT4 v="no"/>
+              <Reduced_drive_for_PT5 v="no"/>
+              <Reduced_drive_for_PT6 v="no"/>
+              <Reduced_drive_for_PT7 v="no"/>
+            </group>
+          </group>
+        </list>
+        <list name="Shared PIT Module Settings" v="1">
+        </list>
+        <list name="Shared PWM Module Settings" v="1">
+        </list>
+        <list name="Shared TIM module settings" v="1">
+        </list>
+        <list name="Shared VREG module settings" v="1">
+          <group name="Voltage Regulator">
+            <Voltage_Access v="Temperature sense"/>
+          </group>
+        </list>
+      </group>
+      <list name="Shared CPU interrupts - XDP512" v="1">
+        <group name="CPU interrupts/resets">
+        </group>
+      </list>
+      <list name="Shared speed modes settings" v="1">
+        <group name="Enabled speed modes">
+          <boolgroup name="High speed mode" v="Enabled">
+            <Internal_bus_clock v="8"/>
+            <boolgroup name="PLL clock" v="Enabled">
+              <Reference_divider v="Auto select"/>
+              <PLL_multiplication_factor v="Auto select"/>
+              <PLL_post_divider v="Auto select"/>
+              <VCO_clock_frequency__MHz_ v="32"/>
+              <Frequency_Modulation v="FM off"/>
+            </boolgroup>
+          </boolgroup>
+          <boolgroup name="Low speed mode" v="Disabled" />
+          <boolgroup name="Slow speed mode" v="Disabled" />
+        </group>
+      </list>
+    </Properties>
+
+    <Methods>
+      <list name="SharedCpuMethods" v="1">
+        <SetHighSpeed v="don&apos;t generate code"/>
+        <SetLowSpeed v="don&apos;t generate code"/>
+        <SetSlowSpeed v="don&apos;t generate code"/>
+        <GetSpeedMode v="don&apos;t generate code"/>
+        <EnableInt v="generate code"/>
+        <DisableInt v="generate code"/>
+        <SetWaitMode v="generate code"/>
+        <SetStopMode v="generate code"/>
+        <Delay100US v="don&apos;t generate code"/>
+        <GetPllLockStatusFlag v="don&apos;t generate code"/>
+        <GetResetSource v="don&apos;t generate code"/>
+      </list>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <list name="SharedCpuEvents" v="1">
+        <event name="OnReset" v="don&apos;t generate code" />
+      </list>
+    </Events>
+    <Compiler v="CodeWarrior HC12X C Compiler"/>
+
+    <CompilerProperties>
+      <Compiler v="CodeWarrior HCS12X C Compiler"/>
+      <enumgroup name="Unhandled interrupts" v="One handler for all">
+        <Interrupt_priority v="Don&apos;t initialize"/>
+        <Unhandled_int_code>
+asm(BGND);
+        </Unhandled_int_code>
+      </enumgroup>
+      <Generate_macros v="yes"/>
+      <group name="User initialization">
+        <User_data_declarations>
+        </User_data_declarations>
+        <User_code_before_PE_initialization>
+        </User_code_before_PE_initialization>
+        <User_code_after_PE_initialization>
+        </User_code_after_PE_initialization>
+      </group>
+      <Memory_model v="Banked"/>
+      <boolgroup name="Generate PRM file" v="yes">
+        <enumgroup name="Stack specification" v="size">
+          <Stack_size v="128"/>
+        </enumgroup>
+        <group name="Memory segments">
+          <Set_default_memory_segments v="Click to set default &gt;"/>
+          <list name="ROM/RAM segments" v="17">
+            <boolgroup name="Segment0" v="Enabled">
+              <Name v="RAM"/>
+              <Qualifier v="READ_WRITE"/>
+              <Address v="8192"/>
+              <Size v="8192"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment1" v="Disabled" />
+            <boolgroup name="Segment2" v="Enabled">
+              <Name v="ROM_C000"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="49152"/>
+              <Size v="16128"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment3" v="Enabled">
+              <Name v="PAGE_F0"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8126464"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment4" v="Enabled">
+              <Name v="PAGE_F1"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8142848"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment5" v="Enabled">
+              <Name v="PAGE_F2"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8159232"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment6" v="Enabled">
+              <Name v="PAGE_F3"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8175616"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment7" v="Enabled">
+              <Name v="PAGE_F4"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8192000"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment8" v="Enabled">
+              <Name v="PAGE_F5"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8208384"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment9" v="Enabled">
+              <Name v="PAGE_F6"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8224768"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment10" v="Enabled">
+              <Name v="PAGE_F7"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8241152"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment11" v="Enabled">
+              <Name v="PAGE_F8"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8257536"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment12" v="Enabled">
+              <Name v="PAGE_F9"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8273920"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment13" v="Enabled">
+              <Name v="PAGE_FA"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8290304"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment14" v="Enabled">
+              <Name v="PAGE_FB"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8306688"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment15" v="Enabled">
+              <Name v="PAGE_FC"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8323072"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment16" v="Enabled">
+              <Name v="PAGE_FE"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="8355840"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+          </list>
+        </group>
+        <list name="C_ImportUserPlacement" v="1">
+          <boolgroup name="Customize placement" v="Disabled" />
+        </list>
+      </boolgroup>
+    </CompilerProperties>
+  </CPU_Bean>
+
+  <CPU_Bean name="Cpu" type="MC9S12DG128_80">
+    <Enabled v="N"/>
+
+    <Properties>
+      <Bean_name v="Cpu"/>
+      <CPU_type v="MC9S12DG128BCFU"/>
+      <list name="Shared CRG module settings" v="1">
+        <group name="Clock settings">
+          <group name="Input clock">
+            <Clock_type v="External clock source"/>
+            <Clock_frequency__MHz_ v="16"/>
+            <group name="Clock input pin">
+              <Pin v="EXTAL"/>
+              <Pin_signal v=""/>
+            </group>
+            <group name="Clock output pin">
+              <Pin v="XTAL"/>
+              <Pin_signal v=""/>
+            </group>
+          </group>
+          <group name="Output clock">
+            <boolgroup name="External clock" v="Enabled">
+              <ECLK_pin v="PE4_ECLK"/>
+              <ECLK_pin_signal v=""/>
+            </boolgroup>
+          </group>
+          <group name="Low-power modes settings">
+            <Pseudo_stop v="no"/>
+            <PLL_stops_in_wait_mode v="no"/>
+          </group>
+          <Clock_monitor v="Enter Self clock mode"/>
+        </group>
+      </list>
+      <Initialization_priority v="interrupts enabled"/>
+      <list name="Shared Internal Resource Mapping With EEPROM" v="1">
+        <group name="Internal resource mapping">
+          <Register_block_mapping v="$0000"/>
+          <Internal_RAM_mapping v="$2000"/>
+          <boolgroup name="Internal FLASH" v="yes">
+            <Half_memory_only v="no"/>
+          </boolgroup>
+          <group name="Interrupt vector table">
+            <Address v="65408"/>
+            <Size v="128"/>
+          </group>
+        </group>
+      </list>
+      <list name="Shared MEBI module settings" v="1">
+        <group name="Operating mode and external bus settings">
+          <Boot_operating_mode v="Special Single Chip"/>
+          <boolgroup name="Operating mode switching" v="no" />
+          <enumgroup name="External bus settings" v="Special Single Chip">
+          </enumgroup>
+        </group>
+      </list>
+      <group name="Internal peripherals">
+        <list name="Shared BDM module settings" v="1">
+          <group name="BDM Debug support">
+            <Stop_COP_and_RTI_in_Active_BDM_mode v="no"/>
+          </group>
+        </list>
+        <list name="Shared ECT 16B8C module settings" v="1">
+        </list>
+        <list name="Shared I/O settings" v="1">
+          <group name="I/O module">
+            <list name="Shared Unused I/O" v="1">
+              <enumgroup name="Initialize unused I/O pins" v="no initialization">
+              </enumgroup>
+            </list>
+            <group name="PORT A">
+              <Reduced_drive_for_all_port_A v="no"/>
+            </group>
+            <group name="PORT B">
+              <Reduced_drive_for_all_port_B v="no"/>
+            </group>
+            <group name="PORT E">
+              <Reduced_drive_for_all_port_E v="no"/>
+            </group>
+            <group name="PORT J">
+              <Reduced_drive_for_PJ6 v="no"/>
+              <Reduced_drive_for_PJ7 v="no"/>
+            </group>
+            <group name="PORT M">
+              <Reduced_drive_for_PM0 v="no"/>
+              <Reduced_drive_for_PM1 v="no"/>
+              <Reduced_drive_for_PM2 v="no"/>
+              <Reduced_drive_for_PM3 v="no"/>
+              <Reduced_drive_for_PM4 v="no"/>
+              <Reduced_drive_for_PM5 v="no"/>
+            </group>
+            <group name="PORT P">
+              <Reduced_drive_for_PP0 v="no"/>
+              <Reduced_drive_for_PP1 v="no"/>
+              <Reduced_drive_for_PP2 v="no"/>
+              <Reduced_drive_for_PP3 v="no"/>
+              <Reduced_drive_for_PP4 v="no"/>
+              <Reduced_drive_for_PP5 v="no"/>
+              <Reduced_drive_for_PP7 v="no"/>
+            </group>
+            <group name="PORT S">
+              <Reduced_drive_for_PS0 v="no"/>
+              <Reduced_drive_for_PS1 v="no"/>
+              <Reduced_drive_for_PS2 v="no"/>
+              <Reduced_drive_for_PS3 v="no"/>
+            </group>
+            <group name="PORT T">
+              <Reduced_drive_for_PT0 v="no"/>
+              <Reduced_drive_for_PT1 v="no"/>
+              <Reduced_drive_for_PT2 v="no"/>
+              <Reduced_drive_for_PT3 v="no"/>
+              <Reduced_drive_for_PT4 v="no"/>
+              <Reduced_drive_for_PT5 v="no"/>
+              <Reduced_drive_for_PT6 v="no"/>
+              <Reduced_drive_for_PT7 v="no"/>
+            </group>
+          </group>
+        </list>
+        <list name="Shared PWM module settings" v="1">
+        </list>
+      </group>
+      <list name="Shared Cpu Interrupts module settings" v="1">
+        <group name="CPU interrupts/resets">
+        </group>
+      </list>
+      <list name="Shared speed modes settings" v="1">
+        <group name="Enabled speed modes">
+          <boolgroup name="High speed mode" v="Enabled">
+            <Internal_bus_clock v="8"/>
+            <boolgroup name="PLL clock" v="Enabled">
+              <Reference_divider v="Auto select"/>
+              <PLL_multiplication_factor v="Auto select"/>
+              <PLL_clock_frequency v="16"/>
+              <PLL_bandwidth_control v="Automatic Bandwidth Control"/>
+              <PLL_mode v="Acquisition mode"/>
+            </boolgroup>
+          </boolgroup>
+          <boolgroup name="Low speed mode" v="Disabled" />
+          <boolgroup name="Slow speed mode" v="Disabled" />
+        </group>
+      </list>
+    </Properties>
+
+    <Methods>
+      <list name="SharedCpuMethods" v="1">
+        <SetHighSpeed v="don&apos;t generate code"/>
+        <SetLowSpeed v="don&apos;t generate code"/>
+        <SetSlowSpeed v="don&apos;t generate code"/>
+        <GetSpeedMode v="don&apos;t generate code"/>
+        <EnableInt v="generate code"/>
+        <DisableInt v="generate code"/>
+        <SetWaitMode v="generate code"/>
+        <SetStopMode v="generate code"/>
+        <Delay100US v="don&apos;t generate code"/>
+        <GetPllLockStatusFlag v="don&apos;t generate code"/>
+        <GetResetSource v="don&apos;t generate code"/>
+      </list>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <list name="SharedCpuEvents" v="1">
+        <event name="OnReset" v="don&apos;t generate code" />
+      </list>
+    </Events>
+    <Compiler v="CodeWarrior HC12 C Compiler"/>
+
+    <CompilerProperties>
+      <Compiler v="CodeWarrior HC12 C Compiler"/>
+      <enumgroup name="Unhandled interrupts" v="One handler for all">
+        <Unhandled_int_code>
+asm(BGND);
+        </Unhandled_int_code>
+      </enumgroup>
+      <Generate_macros v="yes"/>
+      <group name="User initialization">
+        <User_data_declarations>
+        </User_data_declarations>
+        <User_code_before_PE_initialization>
+        </User_code_before_PE_initialization>
+        <User_code_after_PE_initialization>
+        </User_code_after_PE_initialization>
+      </group>
+      <boolgroup name="Serial monitor support" v="Disabled" />
+      <Memory_model v="Banked"/>
+      <boolgroup name="Generate PRM file" v="yes">
+        <enumgroup name="Stack specification" v="size">
+          <Stack_size v="128"/>
+        </enumgroup>
+        <group name="Memory segments">
+          <Set_default_memory_segments v="Click to set default &gt;"/>
+          <list name="ROM/RAM segments" v="10">
+            <boolgroup name="Segment 0" v="Disabled" />
+            <boolgroup name="Segment 1" v="Enabled">
+              <Name v="RAM"/>
+              <Qualifier v="READ_WRITE"/>
+              <Address v="8192"/>
+              <Size v="8192"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 2" v="Disabled" />
+            <boolgroup name="Segment 3" v="Enabled">
+              <Name v="ROM_C000"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="49152"/>
+              <Size v="16128"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 4" v="Enabled">
+              <Name v="PAGE_38"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="3702784"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 5" v="Enabled">
+              <Name v="PAGE_39"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="3768320"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 6" v="Enabled">
+              <Name v="PAGE_3A"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="3833856"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 7" v="Enabled">
+              <Name v="PAGE_3B"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="3899392"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 8" v="Enabled">
+              <Name v="PAGE_3C"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="3964928"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 9" v="Enabled">
+              <Name v="PAGE_3D"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="4030464"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+          </list>
+        </group>
+        <list name="C_ImportUserPlacement" v="1">
+          <boolgroup name="Customize placement" v="Disabled" />
+        </list>
+      </boolgroup>
+    </CompilerProperties>
+  </CPU_Bean>
+
+  <CPU_Bean name="Cpu112" type="MC9S12DG128_112">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="Cpu112"/>
+      <CPU_type v="MC9S12DG128BCPV"/>
+      <list name="Shared CRG module settings" v="1">
+        <group name="Clock settings">
+          <group name="Input clock">
+            <Clock_type v="External clock source"/>
+            <Clock_frequency__MHz_ v="16"/>
+            <group name="Clock input pin">
+              <Pin v="EXTAL"/>
+              <Pin_signal v=""/>
+            </group>
+            <group name="Clock output pin">
+              <Pin v="XTAL"/>
+              <Pin_signal v=""/>
+            </group>
+          </group>
+          <group name="Output clock">
+            <boolgroup name="External clock" v="Disabled" />
+          </group>
+          <group name="Low-power modes settings">
+            <Pseudo_stop v="no"/>
+            <System_clocks_stop_in_wait_mode v="no"/>
+            <Reduced_oscillator_amplitude_in_wait_mode v="no"/>
+            <Core_stops_in_wait_mode v="no"/>
+            <PLL_stops_in_wait_mode v="no"/>
+          </group>
+          <Clock_monitor v="Enter Self clock mode"/>
+        </group>
+      </list>
+      <Initialization_priority v="interrupts enabled"/>
+      <list name="Shared Internal Resource Mapping With EEPROM" v="1">
+        <group name="Internal resource mapping">
+          <Register_block_mapping v="$0000"/>
+          <Internal_RAM_mapping v="$2000"/>
+          <boolgroup name="Internal EEPROM" v="Enabled">
+            <Internal_EEPROM_mapping v="$1800"/>
+          </boolgroup>
+          <boolgroup name="Internal FLASH" v="yes">
+            <Half_memory_only v="no"/>
+          </boolgroup>
+          <group name="Interrupt vector table">
+            <Address v="65408"/>
+            <Size v="128"/>
+          </group>
+        </group>
+      </list>
+      <list name="Shared MEBI module settings" v="1">
+        <group name="Operating mode and external bus settings">
+          <Boot_operating_mode v="Special Single Chip"/>
+          <boolgroup name="Operating mode switching" v="no" />
+          <enumgroup name="External bus settings" v="Special Single Chip">
+          </enumgroup>
+        </group>
+      </list>
+      <group name="Internal peripherals">
+        <list name="Shared BDM module settings" v="1">
+          <group name="BDM Debug support">
+            <Stop_COP_and_RTI_in_Active_BDM_mode v="no"/>
+          </group>
+        </list>
+        <list name="Shared ECT 16B8C module settings" v="1">
+        </list>
+        <list name="Shared I/O settings" v="1">
+          <group name="I/O module">
+            <list name="Shared Unused I/O" v="1">
+              <enumgroup name="Initialize unused I/O pins" v="no initialization">
+              </enumgroup>
+            </list>
+            <group name="PORT A">
+              <Reduced_drive_for_all_port_A v="no"/>
+            </group>
+            <group name="PORT B">
+              <Reduced_drive_for_all_port_B v="no"/>
+            </group>
+            <group name="PORT E">
+              <Reduced_drive_for_all_port_E v="no"/>
+            </group>
+            <group name="PORT H">
+              <Reduced_drive_for_PH0 v="no"/>
+              <Reduced_drive_for_PH1 v="no"/>
+              <Reduced_drive_for_PH2 v="no"/>
+              <Reduced_drive_for_PH3 v="no"/>
+              <Reduced_drive_for_PH4 v="no"/>
+              <Reduced_drive_for_PH5 v="no"/>
+              <Reduced_drive_for_PH6 v="no"/>
+              <Reduced_drive_for_PH7 v="no"/>
+            </group>
+            <group name="PORT J">
+              <Reduced_drive_for_PJ0 v="no"/>
+              <Reduced_drive_for_PJ1 v="no"/>
+              <Reduced_drive_for_PJ6 v="no"/>
+              <Reduced_drive_for_PJ7 v="no"/>
+            </group>
+            <group name="PORT K">
+              <Reduced_drive_for_all_port_K v="no"/>
+            </group>
+            <group name="PORT M">
+              <Reduced_drive_for_PM0 v="no"/>
+              <Reduced_drive_for_PM1 v="no"/>
+              <Reduced_drive_for_PM2 v="no"/>
+              <Reduced_drive_for_PM3 v="no"/>
+              <Reduced_drive_for_PM4 v="no"/>
+              <Reduced_drive_for_PM5 v="no"/>
+              <Reduced_drive_for_PM6 v="no"/>
+              <Reduced_drive_for_PM7 v="no"/>
+            </group>
+            <group name="PORT P">
+              <Reduced_drive_for_PP0 v="no"/>
+              <Reduced_drive_for_PP1 v="no"/>
+              <Reduced_drive_for_PP2 v="no"/>
+              <Reduced_drive_for_PP3 v="no"/>
+              <Reduced_drive_for_PP4 v="no"/>
+              <Reduced_drive_for_PP5 v="no"/>
+              <Reduced_drive_for_PP6 v="no"/>
+              <Reduced_drive_for_PP7 v="no"/>
+            </group>
+            <group name="PORT S">
+              <Reduced_drive_for_PS0 v="no"/>
+              <Reduced_drive_for_PS1 v="no"/>
+              <Reduced_drive_for_PS2 v="no"/>
+              <Reduced_drive_for_PS3 v="no"/>
+              <Reduced_drive_for_PS4 v="no"/>
+              <Reduced_drive_for_PS5 v="no"/>
+              <Reduced_drive_for_PS6 v="no"/>
+              <Reduced_drive_for_PS7 v="no"/>
+            </group>
+            <group name="PORT T">
+              <Reduced_drive_for_PT0 v="no"/>
+              <Reduced_drive_for_PT1 v="no"/>
+              <Reduced_drive_for_PT2 v="no"/>
+              <Reduced_drive_for_PT3 v="no"/>
+              <Reduced_drive_for_PT4 v="no"/>
+              <Reduced_drive_for_PT5 v="no"/>
+              <Reduced_drive_for_PT6 v="no"/>
+              <Reduced_drive_for_PT7 v="no"/>
+            </group>
+          </group>
+        </list>
+        <list name="Shared PWM module settings" v="1">
+        </list>
+      </group>
+      <list name="Shared Cpu Interrupts module settings" v="1">
+        <group name="CPU interrupts/resets">
+          <boolgroup name="Clock monitor reset" v="Disabled" />
+          <boolgroup name="IllegalOpcode" v="Disabled" />
+          <boolgroup name="SWI" v="Disabled" />
+          <boolgroup name="PLL" v="Disabled" />
+          <boolgroup name="SCM" v="Disabled" />
+        </group>
+      </list>
+      <list name="Shared speed modes settings" v="1">
+        <group name="Enabled speed modes">
+          <boolgroup name="High speed mode" v="Enabled">
+            <Internal_bus_clock v="8"/>
+            <boolgroup name="PLL clock" v="Disabled" />
+          </boolgroup>
+          <boolgroup name="Low speed mode" v="Disabled" />
+          <boolgroup name="Slow speed mode" v="Disabled" />
+        </group>
+      </list>
+    </Properties>
+
+    <Methods>
+      <list name="SharedCpuMethods" v="1">
+        <SetHighSpeed v="don&apos;t generate code"/>
+        <SetLowSpeed v="don&apos;t generate code"/>
+        <SetSlowSpeed v="don&apos;t generate code"/>
+        <GetSpeedMode v="don&apos;t generate code"/>
+        <SetIntVect v="don&apos;t generate code"/>
+        <GetIntVect v="don&apos;t generate code"/>
+        <EnableInt v="generate code"/>
+        <DisableInt v="generate code"/>
+        <SetWaitMode v="generate code"/>
+        <SetStopMode v="generate code"/>
+        <Delay100US v="don&apos;t generate code"/>
+        <GetPllLockStatusFlag v="don&apos;t generate code"/>
+        <GetResetSource v="don&apos;t generate code"/>
+      </list>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <list name="SharedCpuEvents" v="1">
+        <event name="OnReset" v="don&apos;t generate code" />
+        <event name="OnClockMonitorFail" v="don&apos;t generate code" />
+        <event name="OnIllegalOpcode" v="don&apos;t generate code" />
+        <event name="OnSwINT" v="don&apos;t generate code" />
+        <event name="OnPllLockStatusChanged" v="don&apos;t generate code" />
+        <event name="OnSCMChanged" v="don&apos;t generate code" />
+      </list>
+    </Events>
+    <Compiler v="CodeWarrior HC12 C Compiler"/>
+
+    <CompilerProperties>
+      <Compiler v="CodeWarrior HC12 C Compiler"/>
+      <enumgroup name="Unhandled interrupts" v="One handler for all">
+        <Unhandled_int_code>
+asm(BGND);
+        </Unhandled_int_code>
+      </enumgroup>
+      <Generate_macros v="yes"/>
+      <group name="User initialization">
+        <User_data_declarations>
+        </User_data_declarations>
+        <User_code_before_PE_initialization>
+        </User_code_before_PE_initialization>
+        <User_code_after_PE_initialization>
+        </User_code_after_PE_initialization>
+      </group>
+      <boolgroup name="Serial monitor support" v="Disabled" />
+      <Memory_model v="Banked"/>
+      <boolgroup name="Generate PRM file" v="yes">
+        <enumgroup name="Stack specification" v="size">
+          <Stack_size v="128"/>
+        </enumgroup>
+        <group name="Memory segments">
+          <Set_default_memory_segments v="Click to set default &gt;"/>
+          <list name="ROM/RAM segments" v="10">
+            <boolgroup name="Segment 0" v="Disabled" />
+            <boolgroup name="Segment 1" v="Enabled">
+              <Name v="RAM"/>
+              <Qualifier v="READ_WRITE"/>
+              <Address v="8192"/>
+              <Size v="8192"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 2" v="Disabled" />
+            <boolgroup name="Segment 3" v="Enabled">
+              <Name v="ROM_C000"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="49152"/>
+              <Size v="16128"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 4" v="Enabled">
+              <Name v="PAGE_38"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="3702784"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 5" v="Enabled">
+              <Name v="PAGE_39"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="3768320"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 6" v="Enabled">
+              <Name v="PAGE_3A"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="3833856"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 7" v="Enabled">
+              <Name v="PAGE_3B"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="3899392"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 8" v="Enabled">
+              <Name v="PAGE_3C"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="3964928"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+            <boolgroup name="Segment 9" v="Enabled">
+              <Name v="PAGE_3D"/>
+              <Qualifier v="READ_ONLY"/>
+              <Address v="4030464"/>
+              <Size v="16384"/>
+              <boolgroup name="Relocation" v="Disabled" />
+              <boolgroup name="Align" v="Disabled" />
+              <boolgroup name="Fill pattern" v="Disabled" />
+              <Code_overlapping v="overlapping not specified"/>
+              <Const_data_overlapping v="overlapping not specified"/>
+            </boolgroup>
+          </list>
+        </group>
+        <list name="C_ImportUserPlacement" v="1">
+          <boolgroup name="Customize placement" v="Disabled" />
+        </list>
+      </boolgroup>
+    </CompilerProperties>
+  </CPU_Bean>
+
+  <Bean name="P1" type="BitIO">
+    <Enabled v="N"/>
+
+    <Properties>
+      <Bean_name v="P1"/>
+      <Pin_for_I_O v="PP1_MOSI1_PWM1_KWP1"/>
+      <Pin_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Open_drain v="push-pull"/>
+      <Reduced_drive_for_PP1 v="no"/>
+      <Direction v="Output"/>
+      <group name="Initialization">
+        <Init__direction v="Output"/>
+        <Init__value v="1"/>
+      </group>
+      <Safe_mode v="yes"/>
+      <Optimization_for v="speed"/>
+    </Properties>
+
+    <Methods>
+      <GetDir v="don&apos;t generate code"/>
+      <SetDir v="don&apos;t generate code"/>
+      <SetInput v="don&apos;t generate code"/>
+      <SetOutput v="don&apos;t generate code"/>
+      <GetVal v="generate code"/>
+      <PutVal v="generate code"/>
+      <ClrVal v="generate code"/>
+      <SetVal v="generate code"/>
+      <NegVal v="don&apos;t generate code"/>
+      <GetRawVal v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="P3" type="BitIO">
+    <Enabled v="N"/>
+
+    <Properties>
+      <Bean_name v="P3"/>
+      <Pin_for_I_O v="PP3_SS1_PWM3_KWP3"/>
+      <Pin_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Open_drain v="push-pull"/>
+      <Reduced_drive_for_PP3 v="no"/>
+      <Direction v="Output"/>
+      <group name="Initialization">
+        <Init__direction v="Output"/>
+        <Init__value v="1"/>
+      </group>
+      <Safe_mode v="yes"/>
+      <Optimization_for v="speed"/>
+    </Properties>
+
+    <Methods>
+      <GetDir v="don&apos;t generate code"/>
+      <SetDir v="don&apos;t generate code"/>
+      <SetInput v="don&apos;t generate code"/>
+      <SetOutput v="don&apos;t generate code"/>
+      <GetVal v="generate code"/>
+      <PutVal v="generate code"/>
+      <ClrVal v="generate code"/>
+      <SetVal v="generate code"/>
+      <NegVal v="don&apos;t generate code"/>
+      <GetRawVal v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="P4" type="BitIO">
+    <Enabled v="N"/>
+
+    <Properties>
+      <Bean_name v="P4"/>
+      <Pin_for_I_O v="PP4_PWM4_KWP4"/>
+      <Pin_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Open_drain v="push-pull"/>
+      <Reduced_drive_for_PP4 v="no"/>
+      <Direction v="Output"/>
+      <group name="Initialization">
+        <Init__direction v="Output"/>
+        <Init__value v="1"/>
+      </group>
+      <Safe_mode v="yes"/>
+      <Optimization_for v="speed"/>
+    </Properties>
+
+    <Methods>
+      <GetDir v="don&apos;t generate code"/>
+      <SetDir v="don&apos;t generate code"/>
+      <SetInput v="don&apos;t generate code"/>
+      <SetOutput v="don&apos;t generate code"/>
+      <GetVal v="generate code"/>
+      <PutVal v="generate code"/>
+      <ClrVal v="generate code"/>
+      <SetVal v="generate code"/>
+      <NegVal v="don&apos;t generate code"/>
+      <GetRawVal v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="ForwardOrBackward" type="BitIO">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="ForwardOrBackward"/>
+      <Pin_for_I_O v="PP5_PWM5_KWP5"/>
+      <Pin_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Open_drain v="push-pull"/>
+      <Reduced_drive_for_PP5 v="no"/>
+      <Direction v="Output"/>
+      <group name="Initialization">
+        <Init__direction v="Output"/>
+        <Init__value v="0"/>
+      </group>
+      <Safe_mode v="yes"/>
+      <Optimization_for v="speed"/>
+    </Properties>
+
+    <Methods>
+      <GetDir v="don&apos;t generate code"/>
+      <SetDir v="don&apos;t generate code"/>
+      <SetInput v="don&apos;t generate code"/>
+      <SetOutput v="don&apos;t generate code"/>
+      <GetVal v="generate code"/>
+      <PutVal v="generate code"/>
+      <ClrVal v="generate code"/>
+      <SetVal v="generate code"/>
+      <NegVal v="don&apos;t generate code"/>
+      <GetRawVal v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="E" type="ByteIO">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="E"/>
+      <Port v="E"/>
+      <Port_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Open_drain sel_value="The settings is irrelevant for input direction" v="push-pull"/>
+      <Direction v="Input"/>
+      <group name="Initialization">
+        <Init__direction v="Input"/>
+        <Init__value v="0"/>
+      </group>
+      <Safe_mode v="yes"/>
+      <group name="PORT E">
+        <Reduced_drive_for_all_port_E v="no"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <GetDir v="generate code"/>
+      <SetDir v="don&apos;t generate code"/>
+      <SetInput v="don&apos;t generate code"/>
+      <SetOutput v="don&apos;t generate code"/>
+      <GetVal v="generate code"/>
+      <PutVal v="don&apos;t generate code"/>
+      <GetBit v="generate code"/>
+      <PutBit v="don&apos;t generate code"/>
+      <SetBit v="don&apos;t generate code"/>
+      <ClrBit v="don&apos;t generate code"/>
+      <NegBit v="don&apos;t generate code"/>
+      <GetRawVal v="don&apos;t generate code"/>
+      <GetRawBit v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="MotorEnableM3" type="BitIO">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="MotorEnableM3"/>
+      <Pin_for_I_O v="PM3_TxCAN0_SS0"/>
+      <Pin_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Open_drain v="push-pull"/>
+      <Reduced_drive_for_PM3 v="no"/>
+      <Direction v="Output"/>
+      <group name="Initialization">
+        <Init__direction v="Output"/>
+        <Init__value v="0"/>
+      </group>
+      <Safe_mode v="yes"/>
+      <Optimization_for v="speed"/>
+    </Properties>
+
+    <Methods>
+      <GetDir v="don&apos;t generate code"/>
+      <SetDir v="don&apos;t generate code"/>
+      <SetInput v="don&apos;t generate code"/>
+      <SetOutput v="don&apos;t generate code"/>
+      <GetVal v="generate code"/>
+      <PutVal v="generate code"/>
+      <ClrVal v="generate code"/>
+      <SetVal v="generate code"/>
+      <NegVal v="don&apos;t generate code"/>
+      <GetRawVal v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="M4" type="BitIO">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="M4"/>
+      <Pin_for_I_O v="PM4_RxCAN0_RxCAN4_MOSI0"/>
+      <Pin_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Open_drain v="push-pull"/>
+      <Reduced_drive_for_PM4 v="no"/>
+      <Direction v="Input/Output"/>
+      <group name="Initialization">
+        <Init__direction v="Output"/>
+        <Init__value v="0"/>
+      </group>
+      <Safe_mode v="yes"/>
+      <Optimization_for v="speed"/>
+    </Properties>
+
+    <Methods>
+      <GetDir v="don&apos;t generate code"/>
+      <SetDir v="generate code"/>
+      <SetInput v="don&apos;t generate code"/>
+      <SetOutput v="don&apos;t generate code"/>
+      <GetVal v="generate code"/>
+      <PutVal v="generate code"/>
+      <ClrVal v="generate code"/>
+      <SetVal v="generate code"/>
+      <NegVal v="don&apos;t generate code"/>
+      <GetRawVal v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="K0" type="BitIO">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="K0"/>
+      <Pin_for_I_O v="PK0_XADDR14"/>
+      <Pin_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Open_drain v="push-pull"/>
+      <Reduced_drive_for_all_port_K v="no"/>
+      <Direction v="Input/Output"/>
+      <group name="Initialization">
+        <Init__direction v="Output"/>
+        <Init__value v="0"/>
+      </group>
+      <Safe_mode v="yes"/>
+      <Optimization_for v="speed"/>
+    </Properties>
+
+    <Methods>
+      <GetDir v="don&apos;t generate code"/>
+      <SetDir v="generate code"/>
+      <SetInput v="don&apos;t generate code"/>
+      <SetOutput v="don&apos;t generate code"/>
+      <GetVal v="generate code"/>
+      <PutVal v="generate code"/>
+      <ClrVal v="generate code"/>
+      <SetVal v="generate code"/>
+      <NegVal v="don&apos;t generate code"/>
+      <GetRawVal v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="MotorEnableK3" type="BitIO">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="MotorEnableK3"/>
+      <Pin_for_I_O v="PK3_XADDR17"/>
+      <Pin_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Open_drain v="push-pull"/>
+      <Reduced_drive_for_all_port_K v="no"/>
+      <Direction v="Output"/>
+      <group name="Initialization">
+        <Init__direction v="Output"/>
+        <Init__value v="0"/>
+      </group>
+      <Safe_mode v="yes"/>
+      <Optimization_for v="speed"/>
+    </Properties>
+
+    <Methods>
+      <GetDir v="don&apos;t generate code"/>
+      <SetDir v="don&apos;t generate code"/>
+      <SetInput v="don&apos;t generate code"/>
+      <SetOutput v="don&apos;t generate code"/>
+      <GetVal v="generate code"/>
+      <PutVal v="generate code"/>
+      <ClrVal v="generate code"/>
+      <SetVal v="generate code"/>
+      <NegVal v="don&apos;t generate code"/>
+      <GetRawVal v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="SCI" type="AsynchroSerial">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="SCI"/>
+      <Channel v="SCI0"/>
+      <boolgroup name="Interrupt service/event" v="Disabled" />
+      <group name="Settings">
+        <Parity v="none"/>
+        <Width v="8 bits"/>
+        <Stop_bit v="1"/>
+        <enumgroup name="SCI output mode" v="Normal">
+        </enumgroup>
+        <boolgroup name="Receiver" v="Enabled">
+          <RxD v="PS0_RxD0"/>
+          <RxD_pin_signal v=""/>
+        </boolgroup>
+        <boolgroup name="Transmitter" v="Enabled">
+          <TxD v="PS1_TxD0"/>
+          <TxD_pin_signal v=""/>
+        </boolgroup>
+        <Baud_rate v="19200 baud"/>
+        <Break_signal v="Disabled"/>
+        <Wakeup_condition v="Idle line wakeup"/>
+        <Stop_in_wait_mode v="no"/>
+        <Idle_line_mode v="starts after start bit"/>
+        <Break_generation_length v="10/11 bits"/>
+      </group>
+      <group name="Initialization">
+        <Enabled_in_init__code v="yes"/>
+        <Events_enabled_in_init_ v="yes"/>
+      </group>
+      <group name="CPU clock/speed selection">
+        <High_speed_mode v="This bean enabled"/>
+        <Low_speed_mode v="This bean disabled"/>
+        <Slow_speed_mode v="This bean disabled"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <Enable v="don&apos;t generate code"/>
+      <Disable v="don&apos;t generate code"/>
+      <EnableEvent v="don&apos;t generate code"/>
+      <DisableEvent v="don&apos;t generate code"/>
+      <RecvChar v="generate code"/>
+      <SendChar v="generate code"/>
+      <RecvBlock v="don&apos;t generate code"/>
+      <SendBlock v="don&apos;t generate code"/>
+      <ClearRxBuf v="don&apos;t generate code"/>
+      <ClearTxBuf v="don&apos;t generate code"/>
+      <CharsInRxBuf v="don&apos;t generate code"/>
+      <GetCharsInRxBuf v="generate code"/>
+      <CharsInTxBuf v="don&apos;t generate code"/>
+      <GetCharsInTxBuf v="generate code"/>
+      <SetBaudRateMode v="don&apos;t generate code"/>
+      <GetError v="don&apos;t generate code"/>
+      <GetBreak v="don&apos;t generate code"/>
+      <SetBreak v="don&apos;t generate code"/>
+      <TurnTxOn v="don&apos;t generate code"/>
+      <TurnTxOff v="don&apos;t generate code"/>
+      <TurnRxOn v="don&apos;t generate code"/>
+      <TurnRxOff v="don&apos;t generate code"/>
+      <LoopMode v="don&apos;t generate code"/>
+      <SetIdle v="don&apos;t generate code"/>
+      <Standby v="don&apos;t generate code"/>
+      <SetDirection v="don&apos;t generate code"/>
+      <GetRxIdle v="don&apos;t generate code"/>
+      <GetTxComplete v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <event name="BeforeNewSpeed" v="don&apos;t generate code" />
+      <event name="AfterNewSpeed" v="don&apos;t generate code" />
+      <event name="OnError" v="don&apos;t generate code" />
+      <event name="OnRxChar" v="don&apos;t generate code" />
+      <event name="OnRxCharExt" v="don&apos;t generate code" />
+      <event name="OnTxChar" v="don&apos;t generate code" />
+      <event name="OnFullRxBuf" v="don&apos;t generate code" />
+      <event name="OnFreeTxBuf" v="don&apos;t generate code" />
+      <event name="OnBreak" v="don&apos;t generate code" />
+      <event name="OnIdle" v="don&apos;t generate code" />
+      <event name="OnTxComplete" v="don&apos;t generate code" />
+    </Events>
+  </Bean>
+
+  <Bean name="Servo1" type="PWM">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="Servo1"/>
+      <PWM_or_PPG_device v="PWMPER01"/>
+      <Duty_compare v="PWMDTY01"/>
+      <Output_pin v="PP1_MOSI1_PWM1_KWP1"/>
+      <Output_pin_signal v=""/>
+      <Counter v="PWM01"/>
+      <boolgroup name="Interrupt service/event" v="Disabled" />
+      <Stop_in_wait_mode v="no"/>
+      <Stop_in_freeze_mode v="no"/>
+      <Emergency_shutdown_feature v="Disabled"/>
+      <boolgroup name="Shutdown pin settings" v="Disabled" />
+      <Period v="40000 ticks"/>
+      <Starting_pulse_width v="3125 ticks"/>
+      <Aligned v="Left"/>
+      <Initial_polarity v="low"/>
+      <Same_period_in_modes v="no"/>
+      <Bean_uses_entire_timer v="no"/>
+      <group name="Initialization">
+        <Enabled_in_init__code v="yes"/>
+        <Events_enabled_in_init_ v="yes"/>
+      </group>
+      <group name="CPU clock/speed selection">
+        <High_speed_mode v="This bean enabled"/>
+        <Low_speed_mode v="This bean disabled"/>
+        <Slow_speed_mode v="This bean disabled"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <Enable v="don&apos;t generate code"/>
+      <Disable v="don&apos;t generate code"/>
+      <EnableEvent v="don&apos;t generate code"/>
+      <DisableEvent v="don&apos;t generate code"/>
+      <SetRatio8 v="don&apos;t generate code"/>
+      <SetRatio16 v="generate code"/>
+      <SetDutyTicks16 v="generate code"/>
+      <SetDutyTicks32 v="don&apos;t generate code"/>
+      <SetDutyUS v="generate code"/>
+      <SetDutyMS v="generate code"/>
+      <SetDutySec v="don&apos;t generate code"/>
+      <SetDutyReal v="don&apos;t generate code"/>
+      <SetValue v="don&apos;t generate code"/>
+      <ClrValue v="don&apos;t generate code"/>
+      <RestartPWM v="don&apos;t generate code"/>
+      <GetShutdownStatus v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <event name="BeforeNewSpeed" v="don&apos;t generate code" />
+      <event name="AfterNewSpeed" v="don&apos;t generate code" />
+      <event name="OnEnd" v="don&apos;t generate code" />
+      <event name="OnShutdown" v="don&apos;t generate code" />
+    </Events>
+  </Bean>
+
+  <Bean name="Servo2" type="PWM">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="Servo2"/>
+      <PWM_or_PPG_device v="PWMPER23"/>
+      <Duty_compare v="PWMDTY23"/>
+      <Output_pin v="PP3_SS1_PWM3_KWP3"/>
+      <Output_pin_signal v=""/>
+      <Counter v="PWM23"/>
+      <boolgroup name="Interrupt service/event" v="Disabled" />
+      <Stop_in_wait_mode v="no"/>
+      <Stop_in_freeze_mode v="no"/>
+      <Emergency_shutdown_feature v="Disabled"/>
+      <boolgroup name="Shutdown pin settings" v="Disabled" />
+      <Period v="40000 ticks"/>
+      <Starting_pulse_width v="3030 ticks"/>
+      <Aligned v="Left"/>
+      <Initial_polarity v="low"/>
+      <Same_period_in_modes v="no"/>
+      <Bean_uses_entire_timer v="no"/>
+      <group name="Initialization">
+        <Enabled_in_init__code v="yes"/>
+        <Events_enabled_in_init_ v="yes"/>
+      </group>
+      <group name="CPU clock/speed selection">
+        <High_speed_mode v="This bean enabled"/>
+        <Low_speed_mode v="This bean disabled"/>
+        <Slow_speed_mode v="This bean disabled"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <Enable v="don&apos;t generate code"/>
+      <Disable v="don&apos;t generate code"/>
+      <EnableEvent v="don&apos;t generate code"/>
+      <DisableEvent v="don&apos;t generate code"/>
+      <SetRatio8 v="don&apos;t generate code"/>
+      <SetRatio16 v="generate code"/>
+      <SetDutyTicks16 v="generate code"/>
+      <SetDutyTicks32 v="don&apos;t generate code"/>
+      <SetDutyUS v="generate code"/>
+      <SetDutyMS v="generate code"/>
+      <SetDutySec v="don&apos;t generate code"/>
+      <SetDutyReal v="don&apos;t generate code"/>
+      <SetValue v="don&apos;t generate code"/>
+      <ClrValue v="don&apos;t generate code"/>
+      <RestartPWM v="don&apos;t generate code"/>
+      <GetShutdownStatus v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <event name="BeforeNewSpeed" v="don&apos;t generate code" />
+      <event name="AfterNewSpeed" v="don&apos;t generate code" />
+      <event name="OnEnd" v="don&apos;t generate code" />
+      <event name="OnShutdown" v="don&apos;t generate code" />
+    </Events>
+  </Bean>
+
+  <Bean name="MainMotor" type="PWM">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="MainMotor"/>
+      <PWM_or_PPG_device v="PWMPER4"/>
+      <Duty_compare v="PWMDTY4"/>
+      <Output_pin v="PP4_PWM4_KWP4"/>
+      <Output_pin_signal v=""/>
+      <Counter v="PWM4"/>
+      <boolgroup name="Interrupt service/event" v="Disabled" />
+      <Stop_in_wait_mode v="no"/>
+      <Stop_in_freeze_mode v="no"/>
+      <Emergency_shutdown_feature v="Disabled"/>
+      <boolgroup name="Shutdown pin settings" v="Disabled" />
+      <Period v="200 ticks"/>
+      <Starting_pulse_width v="100 ticks"/>
+      <Aligned v="Left"/>
+      <Initial_polarity v="low"/>
+      <Same_period_in_modes v="no"/>
+      <Bean_uses_entire_timer v="no"/>
+      <group name="Initialization">
+        <Enabled_in_init__code v="no"/>
+        <Events_enabled_in_init_ v="yes"/>
+      </group>
+      <group name="CPU clock/speed selection">
+        <High_speed_mode v="This bean enabled"/>
+        <Low_speed_mode v="This bean disabled"/>
+        <Slow_speed_mode v="This bean disabled"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <Enable v="generate code"/>
+      <Disable v="generate code"/>
+      <EnableEvent v="don&apos;t generate code"/>
+      <DisableEvent v="don&apos;t generate code"/>
+      <SetRatio8 v="don&apos;t generate code"/>
+      <SetRatio16 v="don&apos;t generate code"/>
+      <SetDutyTicks16 v="generate code"/>
+      <SetDutyTicks32 v="don&apos;t generate code"/>
+      <SetDutyUS v="don&apos;t generate code"/>
+      <SetDutyMS v="don&apos;t generate code"/>
+      <SetDutySec v="don&apos;t generate code"/>
+      <SetDutyReal v="don&apos;t generate code"/>
+      <SetValue v="don&apos;t generate code"/>
+      <ClrValue v="don&apos;t generate code"/>
+      <RestartPWM v="don&apos;t generate code"/>
+      <GetShutdownStatus v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <event name="BeforeNewSpeed" v="don&apos;t generate code" />
+      <event name="AfterNewSpeed" v="don&apos;t generate code" />
+      <event name="OnEnd" v="don&apos;t generate code" />
+      <event name="OnShutdown" v="don&apos;t generate code" />
+    </Events>
+  </Bean>
+
+  <Bean name="SpeedSensor" type="PulseAccumulator">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="SpeedSensor"/>
+      <Counter v="PACNT01"/>
+      <boolgroup name="Interrupt service/event" v="Disabled" />
+      <boolgroup name="Initialize input" v="Enabled">
+        <Input_pin v="PT0_IOC0"/>
+        <Input_pin_signal v=""/>
+        <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+        <Edge v="both edges"/>
+        <Overwrite v="yes"/>
+      </boolgroup>
+      <boolgroup name="Mode" v="Event counter" />
+      <group name="Initialization">
+        <Enabled_in_init__code v="yes"/>
+        <Events_enabled_in_init_ v="yes"/>
+        <Stop_in_wait_mode v="no"/>
+        <Stop_in_freeze_mode v="no"/>
+        <Delay_counter v="Disabled"/>
+        <ECT_Mode v="Queue"/>
+        <Buffer v="no"/>
+        <group name="Share input action">
+          <Share_capture_channels_3___7 v="no"/>
+          <Share_capture_channels_2___6 v="no"/>
+          <Share_capture_channels_1___5 v="no"/>
+          <Share_capture_channels_0___4 v="no"/>
+        </group>
+      </group>
+    </Properties>
+
+    <Methods>
+      <Enable v="don&apos;t generate code"/>
+      <Disable v="don&apos;t generate code"/>
+      <EnableEvent v="don&apos;t generate code"/>
+      <DisableEvent v="don&apos;t generate code"/>
+      <ResetCounter v="generate code"/>
+      <SetCounter v="don&apos;t generate code"/>
+      <GetCounterValue v="generate code"/>
+      <GetHoldValue v="don&apos;t generate code"/>
+      <Latch v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <event name="BeforeNewSpeed" v="don&apos;t generate code" />
+      <event name="AfterNewSpeed" v="don&apos;t generate code" />
+      <event name="OnOverflow" v="don&apos;t generate code" />
+      <event name="OnEdge" v="don&apos;t generate code" />
+    </Events>
+  </Bean>
+
+  <Bean name="PORTA" type="ByteIO">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="PORTA"/>
+      <Port v="A"/>
+      <Port_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Open_drain v="push-pull"/>
+      <Direction v="Output"/>
+      <group name="Initialization">
+        <Init__direction v="Output"/>
+        <Init__value v="0"/>
+      </group>
+      <Safe_mode v="yes"/>
+      <group name="PORT A">
+        <Reduced_drive_for_all_port_A v="no"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <GetDir v="generate code"/>
+      <SetDir v="don&apos;t generate code"/>
+      <SetInput v="don&apos;t generate code"/>
+      <SetOutput v="don&apos;t generate code"/>
+      <GetVal v="generate code"/>
+      <PutVal v="generate code"/>
+      <GetBit v="generate code"/>
+      <PutBit v="generate code"/>
+      <SetBit v="generate code"/>
+      <ClrBit v="generate code"/>
+      <NegBit v="generate code"/>
+      <GetRawVal v="don&apos;t generate code"/>
+      <GetRawBit v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="PORTB" type="ByteIO">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="PORTB"/>
+      <Port v="B"/>
+      <Port_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Open_drain v="push-pull"/>
+      <Direction v="Output"/>
+      <group name="Initialization">
+        <Init__direction v="Output"/>
+        <Init__value v="0"/>
+      </group>
+      <Safe_mode v="yes"/>
+      <group name="PORT B">
+        <Reduced_drive_for_all_port_B v="no"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <GetDir v="generate code"/>
+      <SetDir v="don&apos;t generate code"/>
+      <SetInput v="don&apos;t generate code"/>
+      <SetOutput v="don&apos;t generate code"/>
+      <GetVal v="generate code"/>
+      <PutVal v="generate code"/>
+      <GetBit v="generate code"/>
+      <PutBit v="generate code"/>
+      <SetBit v="generate code"/>
+      <ClrBit v="generate code"/>
+      <NegBit v="generate code"/>
+      <GetRawVal v="don&apos;t generate code"/>
+      <GetRawBit v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="Cap1" type="Capture">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="Cap1"/>
+      <Capture_device v="TC5"/>
+      <Counter v="ECT_Counter"/>
+      <Capture_input_pin v="PT5_IOC5"/>
+      <Capture_input_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Edge v="falling edge"/>
+      <boolgroup name="Interrupt service/event" v="Disabled" />
+      <Maximum_time_of_event v="262144 ticks"/>
+      <Overwrite v="yes"/>
+      <group name="Initialization">
+        <Enabled_in_init__code v="yes"/>
+        <Events_enabled_in_init_ v="yes"/>
+        <Stop_in_wait_mode v="no"/>
+        <Stop_in_freeze_mode v="no"/>
+        <group name="Share input action">
+          <Share_capture_channels_3___7 v="no"/>
+          <Share_capture_channels_2___6 v="no"/>
+          <Share_capture_channels_1___5 v="no"/>
+          <Share_capture_channels_0___4 v="no"/>
+        </group>
+      </group>
+      <group name="CPU clock/speed selection">
+        <High_speed_mode v="This bean enabled"/>
+        <Low_speed_mode v="This bean disabled"/>
+        <Slow_speed_mode v="This bean disabled"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <Enable v="don&apos;t generate code"/>
+      <Disable v="don&apos;t generate code"/>
+      <EnableEvent v="don&apos;t generate code"/>
+      <DisableEvent v="don&apos;t generate code"/>
+      <Reset v="generate code"/>
+      <GetCaptureValue v="generate code"/>
+      <GetStatus v="don&apos;t generate code"/>
+      <GetHoldValue v="don&apos;t generate code"/>
+      <Latch v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <event name="BeforeNewSpeed" v="don&apos;t generate code" />
+      <event name="AfterNewSpeed" v="don&apos;t generate code" />
+      <event name="OnCapture" v="don&apos;t generate code" />
+      <event name="OnOverflow" v="don&apos;t generate code" />
+    </Events>
+  </Bean>
+
+  <Bean name="Cap2" type="Capture">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="Cap2"/>
+      <Capture_device v="TC7"/>
+      <Counter v="ECT_Counter"/>
+      <Capture_input_pin v="PT7_IOC7"/>
+      <Capture_input_signal v=""/>
+      <Pull_resistor sel_value="no pull resistor" v="autoselected pull"/>
+      <Edge sel_value="rising edge" v="rising or falling edge"/>
+      <boolgroup name="Interrupt service/event" v="Disabled" />
+      <Maximum_time_of_event v="262144 ticks"/>
+      <Overwrite v="yes"/>
+      <group name="Initialization">
+        <Enabled_in_init__code v="yes"/>
+        <Events_enabled_in_init_ v="yes"/>
+        <Stop_in_wait_mode v="no"/>
+        <Stop_in_freeze_mode v="no"/>
+        <group name="Share input action">
+          <Share_capture_channels_3___7 v="no"/>
+          <Share_capture_channels_2___6 v="no"/>
+          <Share_capture_channels_1___5 v="no"/>
+          <Share_capture_channels_0___4 v="no"/>
+        </group>
+      </group>
+      <group name="CPU clock/speed selection">
+        <High_speed_mode v="This bean enabled"/>
+        <Low_speed_mode v="This bean disabled"/>
+        <Slow_speed_mode v="This bean disabled"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <Enable v="don&apos;t generate code"/>
+      <Disable v="don&apos;t generate code"/>
+      <EnableEvent v="don&apos;t generate code"/>
+      <DisableEvent v="don&apos;t generate code"/>
+      <Reset v="generate code"/>
+      <GetCaptureValue v="generate code"/>
+      <GetStatus v="don&apos;t generate code"/>
+      <GetHoldValue v="don&apos;t generate code"/>
+      <Latch v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <event name="BeforeNewSpeed" v="don&apos;t generate code" />
+      <event name="AfterNewSpeed" v="don&apos;t generate code" />
+      <event name="OnCapture" v="don&apos;t generate code" />
+      <event name="OnOverflow" v="don&apos;t generate code" />
+    </Events>
+  </Bean>
+
+  <Bean name="ATC0" type="ADC">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="ATC0"/>
+      <A_D_converter v="ADC0"/>
+      <Sharing v="Disabled"/>
+      <boolgroup name="Interrupt service/event" v="Disabled" />
+      <list name="A/D channels" v="1">
+        <group name="Channel0">
+          <A_D_channel__pin_ v="PAD00_AN00"/>
+          <A_D_channel__pin__signal v=""/>
+        </group>
+      </list>
+      <A_D_resolution v="8 bits"/>
+      <Conversion_time v="64 ticks"/>
+      <Sample_time v="4 clock periods"/>
+      <Result_mode v="Right justified"/>
+      <Autoscan_mode v="Enabled"/>
+      <Recovery_time v="100"/>
+      <Stop_in_wait_mode v="no"/>
+      <boolgroup name="External trigger" v="Disabled" />
+      <Number_of_conversions v="8"/>
+      <group name="Initialization">
+        <Enabled_in_init__code v="yes"/>
+        <Events_enabled_in_init_ v="yes"/>
+      </group>
+      <group name="CPU clock/speed selection">
+        <High_speed_mode v="This bean enabled"/>
+        <Low_speed_mode v="This bean disabled"/>
+        <Slow_speed_mode v="This bean disabled"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <Enable v="don&apos;t generate code"/>
+      <Disable v="don&apos;t generate code"/>
+      <EnableEvent v="don&apos;t generate code"/>
+      <DisableEvent v="don&apos;t generate code"/>
+      <Start v="don&apos;t generate code"/>
+      <Stop v="don&apos;t generate code"/>
+      <Measure v="generate code"/>
+      <MeasureWait v="don&apos;t generate code"/>
+      <MeasureNotWait v="don&apos;t generate code"/>
+      <MeasureChan v="don&apos;t generate code"/>
+      <MeasureChanWait v="don&apos;t generate code"/>
+      <MeasureChanNotWait v="don&apos;t generate code"/>
+      <EnableExtTrigger v="don&apos;t generate code"/>
+      <EnableExtChanTrigger v="don&apos;t generate code"/>
+      <GetValue v="don&apos;t generate code"/>
+      <GetChanValue v="don&apos;t generate code"/>
+      <GetValue8 v="don&apos;t generate code"/>
+      <GetChanValue8 v="don&apos;t generate code"/>
+      <GetValue16 v="generate code"/>
+      <GetChanValue16 v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <event name="BeforeNewSpeed" v="don&apos;t generate code" />
+      <event name="AfterNewSpeed" v="don&apos;t generate code" />
+      <event name="OnEnd" v="don&apos;t generate code" />
+      <event name="OnTrgOverrun" v="don&apos;t generate code" />
+    </Events>
+  </Bean>
+
+  <Bean name="ATC1" type="ADC">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Bean_name v="ATC1"/>
+      <A_D_converter v="ADC1"/>
+      <Sharing v="Disabled"/>
+      <boolgroup name="Interrupt service/event" v="Disabled" />
+      <list name="A/D channels" v="1">
+        <group name="Channel0">
+          <A_D_channel__pin_ v="PAD08_AN08"/>
+          <A_D_channel__pin__signal v=""/>
+        </group>
+      </list>
+      <A_D_resolution v="8 bits"/>
+      <Conversion_time v="64 ticks"/>
+      <Sample_time v="4 clock periods"/>
+      <Result_mode v="Right justified"/>
+      <Autoscan_mode v="Enabled"/>
+      <Recovery_time v="100"/>
+      <Stop_in_wait_mode v="no"/>
+      <boolgroup name="External trigger" v="Disabled" />
+      <Number_of_conversions v="8"/>
+      <group name="Initialization">
+        <Enabled_in_init__code v="yes"/>
+        <Events_enabled_in_init_ v="yes"/>
+      </group>
+      <group name="CPU clock/speed selection">
+        <High_speed_mode v="This bean enabled"/>
+        <Low_speed_mode v="This bean disabled"/>
+        <Slow_speed_mode v="This bean disabled"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <Enable v="don&apos;t generate code"/>
+      <Disable v="don&apos;t generate code"/>
+      <EnableEvent v="don&apos;t generate code"/>
+      <DisableEvent v="don&apos;t generate code"/>
+      <Start v="don&apos;t generate code"/>
+      <Stop v="don&apos;t generate code"/>
+      <Measure v="generate code"/>
+      <MeasureWait v="don&apos;t generate code"/>
+      <MeasureNotWait v="don&apos;t generate code"/>
+      <MeasureChan v="don&apos;t generate code"/>
+      <MeasureChanWait v="don&apos;t generate code"/>
+      <MeasureChanNotWait v="don&apos;t generate code"/>
+      <EnableExtTrigger v="don&apos;t generate code"/>
+      <EnableExtChanTrigger v="don&apos;t generate code"/>
+      <GetValue v="don&apos;t generate code"/>
+      <GetChanValue v="don&apos;t generate code"/>
+      <GetValue8 v="don&apos;t generate code"/>
+      <GetChanValue8 v="don&apos;t generate code"/>
+      <GetValue16 v="generate code"/>
+      <GetChanValue16 v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <event name="BeforeNewSpeed" v="don&apos;t generate code" />
+      <event name="AfterNewSpeed" v="don&apos;t generate code" />
+      <event name="OnEnd" v="don&apos;t generate code" />
+      <event name="OnTrgOverrun" v="don&apos;t generate code" />
+    </Events>
+  </Bean>
+
+</PE_PROJECT_SETTINGS_DOCUMENTATION>
